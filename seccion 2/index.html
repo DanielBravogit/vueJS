@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>directivas</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+    <div id="vm">
+        <img :src="imagen">
+        <p v-text="texto"></p>
+        <p v-html="texto2"></p>
+        <p v-if="parrafo == 1">Probando el if directivo</p>
+        <p v-else-if="parrafo == 2">Este es el else</p>
+        <p v-else-if="parrafo == 3"></p>
+        <p v-show="mostrar">SHOW</p>
+        <br>
+        <ul>
+            <li v-for="(pais,indice) in paises">
+              {{ indice }} -- {{ pais.nombre }} -- {{ pais.idioma}}
+            </li>
+        </ul>
+    </div>
+    <script src="vue.js"> </script>
+</body>
+</html>

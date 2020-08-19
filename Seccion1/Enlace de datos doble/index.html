@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primera aplicacion de Vue.js</title>
+    <title>Enlace de datos doble</title>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 </head>
 <body>
-    <div class="vue">
-        <span>{{ mostrarMensaje() }}</span>
-        <img :src="src">
-        
+    <div id="vm">
+        <input type="text" v-model="nombre">
+        <hr>
+        Hola {{ nombre }} , Bienvenido
     </div>
-    <script src="vue.js"></script>
+    <script src="vue.js"> </script>
 </body>
 </html>
