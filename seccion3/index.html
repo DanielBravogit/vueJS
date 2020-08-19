@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+    <div id="vm">
+        <button v-on:click=sumaruno>Sumar uno</button>
+        <button v-on:click=restaruno>Restar uno</button>
+        {{ contador }}
+        <hr>
+        <br>
+        <button @click="alerta('Esta es la alerta')">Mostrar alerta</button>
+        <hr>
+        <br>
+        <div style="height: 300px;" @mousemove="mostrarUbicacion" v-on:click.once="sumar"></div>
+        x: {{x}} , y: {{y}}
+        <input type="text" v-on:keyup="sumar"> 
+    </div>
+    <script src="vue.js"> </script>
+</body>
+</html>
